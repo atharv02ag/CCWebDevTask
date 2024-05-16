@@ -9,12 +9,13 @@ const getJSON = async (url)=>{
 const nav = document.querySelector('nav');
 const sideHeading = document.querySelector('.side-bar .side-heading');
 nav.addEventListener("click",(e)=>{
+    if(!e.target.matches('span')) return;
     for(let child of nav.children){
         if(child.matches('.selected-nav')){
             child.classList.remove('selected-nav');
+            e.target.classList.add('selected-nav');
         }
     }
-    e.target.classList.add('selected-nav');
 })
 
 sideHeading.addEventListener("click",(e)=>{
