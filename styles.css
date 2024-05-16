@@ -217,3 +217,23 @@ ul.side-articles{
     color : black;
     background-color : inherit;
 }
+
+.pop-anim{
+    cursor : pointer;
+    transition : all 120ms ease-in-out;
+}
+
+.pop-anim:hover{
+    transform:translate(-7px,-7px);
+    box-shadow: 3px 3px 10px 0 rgb(78, 78, 78); 
+}
+
+.pop-anim-side{
+    cursor : pointer;
+    transition : all 120ms ease-in-out;
+}
+
+.pop-anim-side:hover{
+    transform:translate(-4px,-4px);
+    box-shadow: 2px 2px 6px 0 rgb(78, 78, 78); 
+}

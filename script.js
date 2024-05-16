@@ -78,6 +78,7 @@ const setSection1 = (obj,element,index)=>{
 const setSection2 = (obj,element,index)=>{
     const newli = document.createElement('li');
     newli.classList.add('side-article');
+    newli.classList.add('pop-anim-side');
     const sideImg = document.createElement('img');
     sideImg.classList.add('side-img');
     const imgURL = obj[index].image;
@@ -111,7 +112,7 @@ const setSection2 = (obj,element,index)=>{
     newli.appendChild(sideText);
     element.appendChild(newli);
 }
-getJSON('./api.json').then(e=>{
+getJSON(url).then(e=>{
     setSection1(e,majorOne.children[0],0);
     setSection1(e,mediumTwo.children[0],1);
     setSection1(e,minorThree.children[0],2);
