@@ -4,22 +4,34 @@
 
 h1{
     margin:0px;
+    font-weight:500;
 }
 p{
     margin:0px;
 }
+ul{
+    padding : 0px;
+}
 body{
+    font-family:'Roboto';
+    background-color : rgb(235, 235, 235);
     margin : 0px;
 }
 header{
-    background-color : black;
+    letter-spacing: -5px;
+    background : url('headerbg.jpg') no-repeat center;
+    background-size : 100% 100%;
     color:white;
-    font-family:'Times New Roman', Times, serif;
-    font-weight:lighter;
-    font-size:2rem;
+    font-family:'Lora';
+    font-size:1.5rem;
     padding : 15px 2%;
 }
+header .big{
+    display : inline;
+    font-size : 4.5rem;
+}
 nav{
+    background-color : white;
     padding : 0 var(--side-gap);
     display : flex;
     justify-content:flex-start;
@@ -34,6 +46,10 @@ nav span{
     transition : background-color 200ms ease-in-out, color 200ms ease-in-out;
 }
 .hover-anim:hover{
+    color:white;
+    background-color:black;
+}
+.selected-nav{
     color:white;
     background-color:black;
 }
@@ -150,6 +166,10 @@ img.calender{
     position : relative;
     top : 2px;
 }
+.selected-side{
+    color:white;
+    background-color:black;
+}
 .side-bar{
     position:absolute;
     right : var(--side-gap);
@@ -166,3 +186,36 @@ img.calender{
     padding : 15px 5px;
     flex-grow : 1;
 }
+ul.side-articles{
+    list-style : none;
+}
+.side-article{
+    padding : 1px 0px;
+    margin : 5px 0px;
+    background-color : white;
+}
+.side-article .side-text{
+    position : relative;
+    bottom : 10px;
+    left : 30%;
+    width : 100px;
+}   
+.side-article .side-headline{
+    font-size : 1.1rem;
+    padding-bottom : 7%;
+}
+.side-img{
+    transform : scale(3.2);
+    position : relative;
+    left : 32px;
+    top : 32px;
+    height: 25px;
+    width : 25px;
+    border-radius : 1px;
+}
+.side-text{
+    margin-bottom : 10px;
+}
+/* .side-text .release-date{
+    margin-bottom: 10px;
+} */

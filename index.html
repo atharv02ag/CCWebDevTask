@@ -3,14 +3,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&
+family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <link rel="stylesheet" href="styles.css">
 <body>
     <header>
-        <h1>TheNewsHive</h1>    
+        <h1><div class="big">T</div>HE
+            <div class="big">N</div>EWS
+            <div class="big">H</div>IVE</h1>    
     </header>
     <nav>
-        <span class="hover-anim">HOME</span>
+        <span class="hover-anim selected-nav">HOME</span>
         <span class="hover-anim">NEWS</span>
         <span class="hover-anim">WORLD</span>
         <span class="hover-anim">BUSINESS</span>
@@ -65,22 +71,41 @@
                 <span class="type">culture</span>
                 <p class="headline"> Why are you gay?</p>
                 <p class="author">John Doe</p>
-                <img class = "calender" src="calender.svg">
-                <span class="release-date">14th October, 2023</span>
+                <div class="release-date">
+                    <img class = "calender" src="calender.svg">
+                    <span>14th October, 2023</span>
+                </div>          
             </div> 
         </div>
     </div>
     <div class="side-bar">
         <div class="side-heading">
-            <span class="hover-anim">Latest</span>
+            <span class="hover-anim selected-side">Latest</span>
             <span class="hover-anim">Popular</span>
         </div>
-        <div class="side-article">
-
-        </div>
-        <div class="side-article"></div>
-        <div class="side-article"></div>
-        <div class="side-article"></div>
+        <ul class="side-articles">
+            <li class="side-article">
+                <img class="side-img" src="pic1.jpg">
+                <div class="side-text">
+                    <p class="side-headline">Tropical depression: Mexico's west coast..</p>
+                    <div class="release-date">
+                        <img class = "calender" src="calender.svg">
+                        <span>14th October, 2023</span>
+                    </div>      
+                </div>   
+            </li>
+            <li class="side-article">
+                <img class="side-img" src="pic1.jpg">
+                <div class="side-text">
+                    <p class="side-headline">Why are you gay?</p>
+                    <div class="release-date">
+                        <img class = "calender" src="calender.svg">
+                        <span>14th October, 2023</span>
+                    </div>  
+            </li>
+            <li class="side-article"></li>
+            <li class="side-article"></li>
+        </ul>
     </div>
 </body>
 <script src="script.js"></script>
