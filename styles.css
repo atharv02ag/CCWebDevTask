@@ -43,7 +43,7 @@ nav span{
 .hover-anim{
     background-color:white;
     cursor:pointer;
-    transition : background-color 200ms ease-in-out, color 200ms ease-in-out;
+    transition : background-color 200ms ease-in, color 200ms ease-in;
 }
 .hover-anim:hover{
     color:white;
@@ -53,7 +53,7 @@ nav span{
     color:white;
     background-color:black;
 }
-nav span:nth-child(7){
+nav .arrow-svg{
     margin-right : auto;
 }
 nav .search{
