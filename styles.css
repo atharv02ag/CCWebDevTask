@@ -212,3 +212,8 @@ ul.side-articles{
     border-radius : 10px;
 }
 
+.release-date span{
+    margin-left : 4px;
+    color : black;
+    background-color : inherit;
+}
