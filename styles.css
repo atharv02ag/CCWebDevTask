@@ -1,5 +1,5 @@
 :root{
-    --side-gap : 15px;
+    --side-gap : 20px;
 }
 
 h1{
@@ -14,7 +14,7 @@ ul{
 }
 body{
     font-family:'Roboto';
-    background-color : rgb(235, 235, 235);
+    background-color : rgb(240, 240, 240);
     margin : 0px;
 }
 header{
@@ -92,8 +92,8 @@ nav .search:hover{
 }
 .content{
     margin : calc(3*var(--side-gap)) var(--side-gap);
-    height : 36.36vw;
-    width : 72.72vw;
+    height : 35vw;
+    width : 70vw;
     display : grid;
     grid-gap : var(--side-gap);
     grid-template-columns : repeat(4,1fr);
@@ -121,11 +121,10 @@ nav .search:hover{
     background-size : 100% 100%;
 }
 .text .type{
-    display:flex;
-    align-items:center;
-    justify-items:center;
+    color : rgb(230, 230, 230);
     max-width:fit-content;
-    padding : 1px 6px 3px 6px;
+    padding : 2px 7px 4px 7px;
+    margin : 0px 4px;
     background-color : black;
     border-radius : 10px;
 }
@@ -134,16 +133,19 @@ nav .search:hover{
 }
 .major .text{
     position : relative;
+    max-width : 90%;
     left : 10%;
-    top : 60%;
+    top : 55%;
 }
 .medium .text{
     position : relative;
+    max-width : 90%;
     left : 10%;
     top : 60%;
 }
 .minor .text{
     position : relative;
+    max-width : 80%;
     left : 10%;
     top : 30%;
 }
@@ -156,7 +158,7 @@ nav .search:hover{
 }
 .medium .text .headline{
     
-    font-size:1.8rem;
+    font-size:1.5rem;
 }
 .minor .text .headline{
     
@@ -173,8 +175,8 @@ img.calender{
 .side-bar{
     position:absolute;
     right : var(--side-gap);
-    top : 31%;
-    width : 20vw;
+    top : 35%;
+    width : 25vw;
 }
 .side-bar .side-heading{
     text-align: center;
@@ -190,32 +192,23 @@ ul.side-articles{
     list-style : none;
 }
 .side-article{
-    padding : 1px 0px;
-    margin : 5px 0px;
+    padding : 4px;
+    margin : 10px 0px;
     background-color : white;
+    display : flex;
 }
 .side-article .side-text{
-    position : relative;
-    bottom : 10px;
-    left : 30%;
-    width : 100px;
+    padding : 5px 0 0 5px;
+    
 }   
 .side-article .side-headline{
     font-size : 1.1rem;
-    padding-bottom : 7%;
+    padding-bottom : 4%;
 }
 .side-img{
-    transform : scale(3.2);
-    position : relative;
-    left : 32px;
-    top : 32px;
-    height: 25px;
-    width : 25px;
-    border-radius : 1px;
+    height: 83px;
+    width : 83px;
+    padding: 6px;
+    border-radius : 10px;
 }
-.side-text{
-    margin-bottom : 10px;
-}
-/* .side-text .release-date{
-    margin-bottom: 10px;
-} */
+
