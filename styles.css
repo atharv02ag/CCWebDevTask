@@ -113,7 +113,7 @@ nav .search:hover{
     border-radius : 6px;
 }
 .major.one{
-    background : url('pic1.jpg') no-repeat center;
+    background : url(./pic1.jpg) no-repeat center;
     background-size : cover;
     grid-column : 1/3;
     grid-row : 1/3;
@@ -257,6 +257,7 @@ ul.side-articles{
     border : 2px solid black;
 }
 .article img{
+    cursor : pointer;
     pointer-events :all;
     margin-bottom : 5%;
     margin-top : 2%;
