@@ -1,3 +1,4 @@
+## NOTE : Task 1 is on branch __task1__ and Task 2 is on branch __main__
 ## Features
 - All items on the navigation bar have hover effect.
 - Buttons on getting clicked get _selected_.
