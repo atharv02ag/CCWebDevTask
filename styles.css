@@ -268,3 +268,67 @@ ul.side-articles{
 .article img:hover{
     transform : scale(1.2);
 }
+@media screen and (max-width : 1400px){
+    .major .text .headline{
+
+        font-size:2rem;
+    }
+    .medium .text .headline{
+        
+        font-size:1.2rem;
+    }
+    .minor .text .headline{
+        
+        font-size:1rem;
+    }
+    .text .type{
+       font-size:0.8rem;
+    }
+    .text .author{
+        font-size:0.8rem;
+    }
+    .text div{
+        font-size:0.8rem;
+    }
+}
+@media screen and (max-width : 1134px){
+    .major .text .headline{
+
+        font-size:1.5rem;
+    }
+    .medium .text .headline{
+        
+        font-size:0.9rem;
+    }
+    .minor .text .headline{
+        
+        font-size:0.8rem;
+    }
+    .text .type{
+        font-size:0.7rem;
+     }
+     .text .author{
+         font-size:0.7rem;
+     }
+     .text div{
+        font-size:0.8rem;
+    }
+    .side-article .side-headline{
+        font-size : 0.8rem;
+        padding-bottom : 4%;
+    }
+    .side-text .release-date{
+        font-size : 0.7rem;
+    }
+    .side-img{
+        height: 60px;
+        width : 60px;
+        padding: 3px;
+        border-radius : 6px;
+    }
+    .side-heading span{
+        border-radius : 3px;
+        padding : 9px 6px;
+        font-size: 0.9rem;
+    }
+}

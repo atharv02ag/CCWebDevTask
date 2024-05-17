@@ -145,14 +145,20 @@ window.addEventListener("load",()=>{
     }
     const date = document.querySelector('.post-nav .date');
     date.innerText += month + " " + day + ", " + String(year) + " in"
-    
 })
 
 closeButton.addEventListener('click',()=>{
     article.style.opacity = 0;
 })
 
-getJSON('./api.json').then(data=>{
+getJSON(url).then(data=>{
+    let headline = data[7].headline;
+    if(headline.length > 50){
+        headline = headline.substring(0,50);
+        headline += '..';
+    }
+    const tagline = document.querySelector('.post-nav .tag-line');
+    tagline.innerText = headline;
     setSection1(data,majorOne.children[0],1);
     setSection1(data,mediumTwo.children[0],2);
     setSection1(data,minorThree.children[0],3);
