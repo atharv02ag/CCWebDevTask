@@ -245,3 +245,25 @@ ul.side-articles{
     transform:translate(-4px,-4px);
     box-shadow: 2px 2px 6px 0 rgb(78, 78, 78); 
 }
+.article{
+    pointer-events : none;
+    position : absolute;
+    width : 15%;
+    background-color : white;
+    padding : 0 1.2% 1.2% 1.2%;
+    line-height : 1.2rem;
+    text-align : justify;
+    border-radius : 6px;
+    border : 2px solid black;
+}
+.article img{
+    pointer-events :all;
+    margin-bottom : 5%;
+    margin-top : 2%;
+    position : relative;
+    left : 98%;
+    top : 3%;
+}
+.article img:hover{
+    transform : scale(1.2);
+}
