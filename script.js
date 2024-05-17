@@ -132,6 +132,20 @@ const writeArticle = (obj,id,posX,posY,side)=>{
 
 window.addEventListener("load",()=>{
     article.style.opacity = 0;
+    let today = new Date();
+    let day = today.getUTCDate();
+    let year = today.getFullYear();
+    let month = today.getMonth();
+    if(month/10 < 1){
+        month = String("0" + month);
+        month = months[month];
+    }
+    if(day/10 < 1){
+        day = String("0" + day);
+    }
+    const date = document.querySelector('.post-nav .date');
+    date.innerText += month + " " + day + ", " + String(year) + " in"
+    
 })
 
 closeButton.addEventListener('click',()=>{
