@@ -19,7 +19,7 @@ body{
 }
 header{
     letter-spacing: -5px;
-    background : url('headerbg.jpg') no-repeat center;
+    background : url('./headerbg.jpg') no-repeat center;
     background-size : 100% 100%;
     color:white;
     font-family:'Lora';
