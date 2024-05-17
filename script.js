@@ -113,7 +113,7 @@ const setSection2 = (obj,element,index)=>{
     newli.appendChild(sideText);
     element.appendChild(newli);
 }
-getJSON(url).then(e=>{
+getJSON('./api.json').then(e=>{
     setSection1(e,majorOne.children[0],0);
     setSection1(e,mediumTwo.children[0],1);
     setSection1(e,minorThree.children[0],2);
@@ -121,6 +121,5 @@ getJSON(url).then(e=>{
     for(let i = 4; i<e.length; i++){
         setSection2(e,sideArticles,i);
     } 
-    //console.log(e[0]);
 })
 
